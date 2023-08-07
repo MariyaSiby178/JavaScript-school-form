@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="form.js"></script>
+  </head>
+  <body onload="onLoader()">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="name" id="name" />
+          <label for="name">Name</label>
+          <p id="name_err"></p>
+          <br />
+        </div>
+        <div class="user-box">
+          <input type="number" name="number" id="number" />
+          <label for="number">Phone Number</label>
+          <p id="number_err"></p>
+          <br />
+        </div>
+        <div class="user-box">
+          <input type="text" name="qua" id="qua" />
+          <label for="qua">Qualification</label>
+          <p id="qua_err"></p>
+          <br />
+        </div>
+        <div class="user-box">
+          <input type="text" name="gender" id="gender" />
+          <label for="gender">Gender</label>
+          <p id="gender_err"></p>
+          <br />
+        </div>
+        <div class="d-flex justify-content-center">
+          <a onclick="submitFunction()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+          <a onclick="BackFunction()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Back
+          </a>
+        </div>
+        <!-- <button onclick="submitFunction()">Submit</button> -->
+      </form>
+    </div>
+  </body>
+</html>
